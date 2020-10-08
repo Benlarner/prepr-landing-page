@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AIOA,UAAU;EACN,WAAW,EARJ,YAAY;EASnB,GAAG,EAAE,uCAAuC;;;AAGhD,UAAU;EACN,WAAW,EAZH,aAAa;EAarB,GAAG,EAAE,qCAAqC;;;AAG9C,UAAU;EACN,WAAW,EAhBH,aAAa;EAiBrB,GAAG,EAAE,oCAAoC;;;AAG7C,UAAU;EACN,WAAW,EAlBA,cAAc;EAmBzB,GAAG,EAAE,8BAA8B;;;AAGvC,UAAU;EACN,WAAW,EAxBH,WAAW;EAyBnB,GAAG,EAAE,6BAA6B;;;AAGtC,UAAU;EACN,WAAW,EA9BH,WAAW;EA+BnB,GAAG,EAAE,2BAA2B",
+    "sources": [
+        "partials.scss",
+        "_mixins.scss",
+        "_variables.scss",
+        "_variables.scss",
+        "_typography.scss"
+    ],
+    "names": [],
+    "file": "partials.css"
+}

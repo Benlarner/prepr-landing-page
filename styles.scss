@@ -1,0 +1,278 @@
+@import './abstracts/partials.scss';
+
+img{
+    height: 90px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: $font-reg;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+main{
+    height: 100%;
+}
+
+.line{
+    margin: 0 auto;
+    height: 2rem;
+    border-bottom: 1px solid black;
+    width: 20%;
+    
+}
+
+.head{
+    @include wrapper;
+    display: flex;
+    color: white;
+    font-family: $font-reg;
+    background-color: $teal;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-family: $font-bold;
+        color: $rust;
+    }
+
+    &__nav{
+        width: 100%;
+        
+
+       ul{
+           padding: 0;
+           width: 100%;
+           display: flex;
+           justify-content: space-between;
+           a:hover{
+            color: black;
+           }
+       }
+
+
+    }
+
+}
+
+
+
+.hero{
+    @include wrapper;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: $dark-teal;
+    @include tablet{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        background-color: unset;
+        background-image: url(./images/trolley.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__content{
+        padding: 2rem 2rem;
+        color: white;
+        background-color: $teal;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid white;
+        border-radius: 20px;
+
+        @include tablet{
+            width: 30%;
+        }
+    }
+
+    &__logo{
+        color: $rust;
+    }
+
+    &__button{
+        @include button;
+    }
+}
+
+.process{
+    height: 55rem;
+    @include wrapper;
+
+    @include tablet{
+        height: 30rem;
+    }
+
+    @include desktop{
+        height: 20rem;
+    }
+    &__items{
+        height: 100%;
+        margin: 2rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        @include tablet{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+
+    &__item{
+        padding: 1rem;
+        text-align: center;
+        width: 50%;
+        border: 3px solid $dark-teal;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include tablet{
+            width: 40%;
+            padding: unset;
+        }
+
+        @include desktop{
+            width: 30%;
+        }
+    }
+
+    &__step{
+        color: $teal;
+        font-family: $font-bold;
+    }
+
+    &__info{
+        font-size: 1.2rem;
+        color: $teal;
+    }
+}
+
+.testimonial{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    @include wrapper;
+
+    &__image{
+        width: 100%;
+        height: auto;
+
+        @include tablet{
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    &__quote{
+        margin-top: 1rem;
+        height: 20px;
+    }
+
+    &__testimonial{
+        margin-top: unset;
+        padding-left: 0.6rem;
+    }
+
+    &__person{
+        padding-left: 0.6rem;
+        font-family: $font-bold;
+        color: $teal;
+    }
+}
+
+.faq{
+    height: 400px;
+    @include wrapper;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    &__title{
+        font-family: $font-bold;
+        @include desktop{
+            margin: 2rem auto;
+            font-size: 2.2rem;
+        }
+    }
+
+    &__container{
+        height: 100%;
+        width: 100%;
+        @include desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__left{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include desktop{
+            height: 100%;
+            width: 48%;
+        }
+    }
+
+    &__right{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include desktop{
+            height: 100%;
+            width: 48%;
+        }
+    }
+
+    &__faq{
+        padding-bottom: 0.6rem;
+        color: $teal;
+        border-bottom: solid 1px grey;
+        @include desktop{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.footer{
+    height: 8rem;
+    color: white;
+    background-color: $dark-teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include wrapper;
+
+    
+    &__list{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+
+}

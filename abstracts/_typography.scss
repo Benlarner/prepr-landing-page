@@ -1,0 +1,36 @@
+$font-reg: "source-reg";
+$font-demi: "source-demi";
+$font-bold: "source-bold";
+$logo-bold: "mail-bold";
+$logo-demi: "mail-demi";
+$logo-regular: "mail-regular";
+
+@font-face{
+    font-family: $font-reg;
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: $font-demi;
+    src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+@font-face{
+    font-family: $font-bold;
+    src: url(../fonts/SourceSansPro-Bold.ttf);
+}
+
+@font-face{
+    font-family: $logo-regular;
+    src: url(../fonts/Mali-Regular.ttf);
+}
+
+@font-face{
+    font-family: $logo-demi;
+    src: url(../fonts/Mali-Italic.ttf);
+}
+
+@font-face{
+    font-family: $logo-bold;
+    src: url(../fonts/Mali-Bold.ttf);
+}
