@@ -76,7 +76,7 @@ main{
     @include wrapper;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: $dark-teal;
+    background-color: rgb(58, 58, 58);
     @include tablet{
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
@@ -92,7 +92,7 @@ main{
     &__content{
         padding: 2rem 2rem;
         color: white;
-        background-color: $teal;
+        background-color: rgb(172, 171, 171);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -265,7 +265,7 @@ main{
 
     height: 8rem;
     color: white;
-    background-color:$dark-teal;
+    background-color: rgb(58, 58, 58);
     display: flex;
     flex-direction: column;
     justify-content: center;
