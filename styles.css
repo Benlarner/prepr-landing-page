@@ -159,6 +159,7 @@ main {
 .hero__content {
   padding: 2rem 2rem;
   color: white;
+  opacity: 0.75;
   background-color: #3a3a3a;
   display: -webkit-box;
   display: -ms-flexbox;
