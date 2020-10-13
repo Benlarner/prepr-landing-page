@@ -21,8 +21,7 @@
     text-transform: uppercase;
     font-family: $font-bold;
     &:hover{
-        background-color: $dark-teal;
-        color: white;
+        color: $pink;
     }
     @content;
 }

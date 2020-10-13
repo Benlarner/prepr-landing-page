@@ -6,7 +6,7 @@ img{
 
 a{
     text-decoration: none;
-    color: white;
+    color:white;
 }
 
 ul{
@@ -37,13 +37,13 @@ main{
     display: flex;
     color: white;
     font-family: $font-reg;
-    background-color: $teal;
+    background-color: white;
     flex-direction: column;
     align-items: center;
 
     &__title{
         font-family: $font-bold;
-        color: $rust;
+        color: $pink;
     }
 
     &__nav{
@@ -55,8 +55,13 @@ main{
            width: 100%;
            display: flex;
            justify-content: space-between;
+           a{
+               font-family: $font-bold;
+               color: black;
+               text-transform: uppercase;
+           }
            a:hover{
-            color: black;
+            color: $pink;
            }
        }
 
@@ -76,7 +81,7 @@ main{
         padding-top: 2.5rem;
         padding-bottom: 2.5rem;
         background-color: unset;
-        background-image: url(./images/trolley.jpg);
+        background-image: linear-gradient(rgba(#323232, 0.5),rgba(#323232, 0.2)),url(./images/trolley.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -101,7 +106,7 @@ main{
     }
 
     &__logo{
-        color: $rust;
+        color: $pink;
     }
 
     &__button{
@@ -156,13 +161,13 @@ main{
     }
 
     &__step{
-        color: $teal;
+        color: $pink;
         font-family: $font-bold;
     }
 
     &__info{
         font-size: 1.2rem;
-        color: $teal;
+        color: $pink;
     }
 }
 
@@ -195,7 +200,7 @@ main{
     &__person{
         padding-left: 0.6rem;
         font-family: $font-bold;
-        color: $teal;
+        color: $pink;
     }
 }
 
@@ -248,7 +253,7 @@ main{
 
     &__faq{
         padding-bottom: 0.6rem;
-        color: $teal;
+        color: $pink;
         border-bottom: solid 1px grey;
         @include desktop{
             font-size: 1.4rem;
@@ -257,9 +262,10 @@ main{
 }
 
 .footer{
+
     height: 8rem;
     color: white;
-    background-color: $dark-teal;
+    background-color:$dark-teal;
     display: flex;
     flex-direction: column;
     justify-content: center;
