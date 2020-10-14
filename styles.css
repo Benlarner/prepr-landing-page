@@ -115,6 +115,13 @@ main {
   color: black;
   text-transform: uppercase;
   margin-right: 2rem;
+  font-size: 0.6rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .head__nav ul a {
+    font-size: unset;
+  }
 }
 
 .head__nav ul a:hover {

@@ -61,6 +61,11 @@ main{
                color: black;
                text-transform: uppercase;
                margin-right: 2rem;
+               font-size: 0.6rem;
+
+               @include tablet{
+                   font-size: unset;
+               }
            }
            a:hover{
             color: $pink;
